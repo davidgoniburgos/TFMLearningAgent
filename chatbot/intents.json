@@ -1,0 +1,239 @@
+{
+    "intents": [
+        {
+            "tag": "saludos",
+            "patterns": [
+            "Hola",
+            "¿Hola, qué tal estas?",
+            "¿Qué tal estas?",
+			"¿Que tal?",
+            "¡Qué pasa!",
+            "¡Hola!",
+            "¡Hey!",
+            "¡Buenos días!"
+            ],
+            "responses": [
+            "Hola qué tal ¿En que te puedo ayudar?",
+				    "¡Hola! ¿En qué te puedo ayudar?"
+            ],
+            "context": [
+            "nombre"
+            ]
+        },
+        {
+            "tag": "despedida",
+            "patterns": [
+            "Adiós",
+            "Nos vemos",
+            "Ciao",
+			"Que pases un buen día adios",
+            "Hasta pronto",
+            "Me piro",
+            "Me voy",
+			"salir"
+            ],
+            "responses": [
+            "Adiós <name> que tengas un buen día",
+            "Hasta luego <name>",
+            "¡Ciao <name>!"
+            ],
+            "context": [
+            ""
+            ]
+        },
+        {
+            "tag": "agradecimiento",
+            "patterns": [
+            "Gracias",
+            "Muchas gracias",
+			"Gracias a ti",
+            "Fué de gran ayuda",
+            "Increible, gracias",
+            "Gracias por ayudarme"
+            ],
+            "responses": [
+            "¡Feliz de ayudar!",
+            "Ha sido un placer ayudarte"
+            ],
+            "context": [
+            ""
+            ]
+        },
+        {
+            "tag": "nombre",
+            "patterns": ["¿Cómo te llamas?",
+            "¿Quién eres?",
+            "¿Cuál es tu nombre?",
+			"¿Me dices tu nombre?",
+			"¿Tienes nombre?",
+			"¿Cómo te puedo llamar?",
+			"¿Dime tu nombre?"
+            ],
+            "responses": [
+            "Me llamo <personaje>",
+			"Soy <personaje> y vivo en la isla de Ítaca",
+            "Yo soy <personaje>"
+            ],
+            "context": [
+            ""
+            ]
+        },
+        {
+            "tag": "minombre",
+            "patterns": ["Mi nombre es Oscar",
+            "Me llamo María",
+            "Soy Luis",
+			"Mi nombre es Lucía",
+			"Soy Carlos",
+			"Me llaman Manuel",
+			"Me llamo Carlos",
+			"Me llamo Carlota"
+            ],
+            "responses": [
+            "Hola <name>, yo me llamo <personaje>",
+			"Hola <name>, soy <personaje>",
+            "Hola <name>, yo soy <personaje>"
+            ],
+            "context": [
+            ""
+            ]
+        },
+		{
+            "tag": "ayuda",
+            "patterns": ["<oraculo> qué es",
+            "<oraculo> cómo es",
+			      "<oraculo> cómo fue",
+				  "<oraculo> cómo son las",
+				  "<oraculo> cómo son los",
+            "<oraculo> cuándo es",
+			      "<oraculo> cuándo fue",
+				  "<oraculo> porqué son",
+			      "<oraculo> porqué es",
+				  "<oraculo> porqué fue",
+				  "<oraculo> por donde",
+			      "<oraculo> quién fue",
+				  "<oraculo> quién era",
+				  "<oraculo> quienes eran las",
+				  "<oraculo> quienes fueron los ",
+				  "<oraculo> quienes fundaron",
+				  "<oraculo> quién creo",
+				  "<oraculo> quién inventó",
+				  "<oraculo> cuando se inventó",
+				  "<oraculo> cuando se creo",
+			      "<oraculo> quién es"
+            ],
+            "responses": [
+            "Esto es lo que se",
+				    "Hasta donde yo se",
+            "Por lo que he oido",
+				    "Me han contado que "
+            ],
+            "context": [
+            ""
+            ]
+        },
+        {
+            "tag": "tema",
+            "patterns": ["<oraculo> leeme el tema",
+			"<oraculo> lee el tema",
+			"<oraculo> dime el tema",
+            "<oraculo> cuéntame el tema",
+			      "<oraculo> dime la lección",
+				  "<oraculo> dime algo de la lección",
+				  "<oraculo> dime algo del tema",
+				  "<oraculo> de que va el tema",
+				  "<oraculo> de que va la lección",
+				  "<oraculo> cuéntame la lección",
+			      "<oraculo> háblame de los",
+			      "<oraculo> quiero saber más del tema",
+				  "<oraculo> quiero aprender el tema",
+				  "<oraculo> quiero aprender la lección",
+			      "<oraculo> quiero saber más de la lección",
+				  "<oraculo> quiero repasar la lección",
+				  "<oraculo> quiero repasar el tema"
+            ],
+            "responses": [
+            "Esto es lo que se",
+				    "Hasta donde yo se",
+            "Por lo que he oido",
+				    "Me han contado que "
+            ],
+            "context": [
+            ""
+            ]
+        },
+        {
+            "tag": "afirmativo",
+            "patterns": ["Si",
+            "claro",
+            "por supuesto",
+            "sin dudarlo",
+            "OK",
+            "okidoki",
+            "vale",
+            "venga",
+			"okay"
+            ],
+            "responses": [
+            "¡Genial!",
+				    "¡Perfecto!",
+            "¡Muchas gracias!"
+            ],
+            "context": [
+            ""
+            ]
+        },
+        {
+            "tag": "negativo",
+            "patterns": ["No",
+            "nunca",
+            "jamás",
+            "lo dudo"
+            ],
+            "responses": [
+            "¡Vaya!",
+				    "¡Oh!",
+					"Lo siento"
+            ],
+            "context": [
+            ""
+            ]
+        },
+        {
+            "tag": "norespuesta",
+            "patterns": [" ",
+            "dajioad",
+            "ppsda",
+            "     ",
+            " "
+            ],
+            "responses": [
+            "Perdón, no te pude entender",
+				    "Perdón, no entendí, ¿puedes reformular la pregunta?"
+            ],
+            "context": [
+            ""
+            ]
+        },
+        {
+            "tag": "malsonante",
+            "patterns": ["joder",
+            "mierda",
+            "que te den",
+            "tonto",
+            "idiota",
+			"inutil",
+			"no vales para nada",
+			"no entiendes nada"
+            ],
+            "responses": [
+            "No deberías habar así",
+				    "¡Qué bruto!",
+					"Eso no ha sido elegante"
+            ],
+            "context": [
+            ""
+            ]
+        }
+    ]
+}

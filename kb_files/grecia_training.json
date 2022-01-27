@@ -1,0 +1,117 @@
+{"version": "v1.0", "data": [
+	{"title": "Grecia", 
+	 "paragraphs": 
+		[{"context": "La civilización griega se originó en el Mediterráneo oriental, entre los mares Jónico y Egeo. A este espacio los griegos lo denominaron la Hélade. El relieve de la Hélade era abrupto de valles separados por altas montañas, que dificultaban las comunicaciones terrestres y la creación de grandes reinos, favoreciendo las comunicaciones marítimas y las creaciones de ciudades-estado independientes. La principal característica de la civilización cretense fué su control del mar, lo que se llama talasocracia. Las ciudades-estado, también llamadas polis, eran independientes y poseían su gobierno, su moneda y su ejército. Las ciudades-estados eran fortalezas amuralladas que se construían en lo alto de las colinas a esta zona elevada y fortificada se llama acrópolis, y dentro de las murallas se agrupaban las casas alrededor de la acrópolis, lugar donde se concentraban los edificios más importantes, como los templos. En el interior de las murallas se encuentra la Ágora, una plaza central donde se celebran actividades políticas y ciudadanas. Cada ciudad-estado estaba rodeada de territorio agrícola dependiente de la que obtenían sus recursos.", 
+			"qas":[
+				{"history": "No quiero meterme en lios y quiero llegar a casa, ¿sabes cómo se le llama a las ciudades griegas?",
+				"question": "¿Sabes cómo se llaman a las ciudades griegas?", 
+				"answers": 
+					[{"text": "polis", "answer_start": 545},
+					{"text": "ciudades-estado", "answer_start": 511}],
+				"id": "1" 
+				},
+				{"history": "Recuerdo que vivo en una ciudad pero no recuerdo cómo son, ¿me puedes decir cómo son las ciudades griegas?",
+				"question": "¿me puedes decir cómo son las ciudades griegas?", 
+				"answers": 
+					[{"text": "eran fortalezas amuralladas", "answer_start": 646}, 
+					{"text": "eran fortalezas amuralladas que se construían en lo alto de las colinas", "answer_start": 646}, 
+					{"text": "eran fortalezas amuralladas que se construían en lo alto de las colinas a esta zona elevada y fortificada se llama acrópolis", "answer_start": 646}], 
+				"id": "2"
+				},
+				{"history": "Creo que vivo cerca de una plaza muy grande donde suele ponerse el mercado y suele haber mucha gente, ¿sabrías decirme cómo se llaman estas plazas?",
+				"question": "¿sabrías decirme cómo se llaman estas plazas?", 
+				"answers": 
+					[{"text": "la Ágora", "answer_start": 963}, 
+					{"text": "la Ágora, una plaza central donde se celebran actividades políticas y ciudadanas", "answer_start": 963}], 
+				"id": "3"
+				},
+				{"history": "Para llegar a esa plaza siempre paso por la Acrópolis, pero ahora no se si es una tienda o un establo, ¿sabes lo que es la Acrópolis?",
+				"question": "¿sabes lo que es la Acrópolis?", 
+				"answers": 
+					[{"text": "zona elevada y fortificada", "answer_start": 720}, 
+					{"text": "lugar donde se concentraban los edificios más importantes, como los templos", "answer_start": 842}], 
+				"id": "4"
+				},
+				{"history": "Es curioso, pero tras el golpe , me vienen nombres raros a la cabeza, ¿sabes lo que es la talasocracia? ¡Me suena a talar árboles!",
+				"question": "¿sabes lo que es la talasocracia?", 
+				"answers": 
+					[{"text": "control del mar", "answer_start": 461}], 
+				"id": "5"
+				}
+			]
+		},
+		{"context": "El territorio de la Hélade tenía recursos agrarios limitados, y el crecimiento de la población produjo escasez de alimentos, provocando conflictos sociales. Estos conflictos sociales por la falta de alimentos produjeron un éxodo que provocó la fundación de ciudades llamada, colonización para favorecer el comercio entre las ciudades-estado. Esta colonización se realizó en torno al mar Mediterráneo. Cada colonia se funda como polis independientes de la ciudad origen o metrópoli, con la que mantenía contactos comerciales y culturales. Los griegos llegaron hasta el extremo occidental del Mediterráneo atraídos por sus riquezas mineras y productos agrícolas, a la que llamaron Iberia. Las colonias más conocidas en la península ibérica fueron Hemeroskopeion, Mainake cerca de la actual Málaga, Rhode (Rosas) y Emporio (Ampurias) en el norte. Al proceso de expansión de la cultura griega se denomina helenización. El comercio por barco entre las ciudades-estado griegas las convirtieron en la mayor potencia marítima del Mediterráneo.", 
+			"qas":[
+				{"history": "Mis padres me dijeron una vez que yo no nací en esta ciudad sino que tuvimos que emigrar a otras ciudades por la falta de recursos agrarios. ¿Sabes cómo se llaman a la fundación de estas ciudades?",
+				"question": "¿sabes cómo se llaman a la fundación de estas ciudades ?", 
+				"answers": 
+					[{"text": "la colonización", "answer_start": 272},
+					{"text": "la colonización: la fundación de ciudades para favorecer el comercio entre las ciudades-estado", "answer_start": 272}],
+				"id": "6"
+				},
+				{"history": "Me han hablado de unas tierras en el extremo occidental del mar mediterráneo que son muy ricas en minería y agricultura, ¿sabes cómo se llama a este lugar?",
+				"question": "¿sabes cómo se llama a este lugar en el extremo occidental del mar Mediterráneo?", 
+				"answers": 
+					[{"text": "Iberia", "answer_start": 678}], 
+				"id": "7"
+				},
+				{"history": "Este nombre tan gracioso, Hemeroskopeion, es una de las ciudades que están en esas tierras, ¿te sabes algún nombre de las colonias más conocidas en la península ibérica?",
+				"question": "¿sabes algún nombre de las colonias más conocidas en la península ibérica?", 
+				"answers": 
+					[{"text": "Mainake cerca de la actual, Málaga, Rhode (Rosas) y Emporio (Ampurias) en el norte", "answer_start": 760}, 
+					{"text": "Rhode (Rosas) y Emporio (Ampurias) en el norte", "answer_start": 796},
+					{"text": "Emporio (Ampurias) en el norte", "answer_start": 812}],					
+				"id": "8"
+				},
+				{"history": "Según me han dicho, los griegos nos hemos extendido mucho y estamos en muchos sitios del mar mediterráneo, sabes cómo llaman a ese proceso de expansión de la cultura griega, me suena algo de Melena…",
+				"question": "¿sabes cómo llaman a ese proceso de expansión de la cultura griega?", 
+				"answers": 
+					[{"text": "Al proceso de expansión de la cultura griega se denomina helenización", "answer_start": 844}, 
+					{"text": "helenización", "answer_start": 901}],  
+				"id": "9"
+				},
+				{"history": "Parece que el comercio entre estas ciudades es muy importante, ¿sabes en que medio de transporte se realiza el comercio? ¿Con mulas? ¿Cabras?",
+				"question": "¿sabes en que medio de transporte se realiza el comercio?", 
+				"answers": 
+					[{"text": "comercio por barco", "answer_start": 919}, 
+					{"text": "por barco", "answer_start": 928},
+					{"text": "barco", "answer_start": 932}],					
+				"id": "9"
+				}
+			]
+		},
+		{"context": "La época clásica tiene lugar durante el siglo 5 antes de cristo ,y la primera mitad del siglo 4 antes de cristo, que fue el apogeo de las ciudades-estado griegas. Este esplendor se inició tras la victoria de los griegos sobre los persas en las guerras médicas, donde las ciudades griegas se unieron contra el imperio persa. Las ciudades de Atenas y Esparta lideraron la victoria sobre los persas.", 
+			"qas":[
+				{"history": "En tus libros pone que vivo en la época clásica , ¿Sabes en que años fue?",
+				"question": "¿Sabes en que años fue la época clásica?", 
+				"answers": 
+					[{"text": "durante el siglo v antes de cristo y la primera mitad del siglo iv antes de cristo", "answer_start": 30},
+					{"text": "durante el siglo v antes de cristo", "answer_start": 30},
+					{"text": "durante el siglo v antes de cristo y la primera mitad del siglo iv", "answer_start": 30}],
+				"id": "10"
+				},
+				{"history": "Hace poco hubo unas grandes batallas por mar y por tierra, creo que lucharon médicos, ¿sabes cómo se llamaron a estas guerras?",
+				"question": "¿Sabes cómo se llamaron a estas guerras?", 
+				"answers": 
+					[{"text": "las guerras médicas", "answer_start": 240}], 
+				"id": "11"
+				},
+				{"history": "¿Y sabes quienes lucharon en ellas?",
+				"question": "¿sabes quienes lucharon en las guerras médicas?", 
+				"answers": 
+					[{"text": "las ciudades griegas se unieron contra el imperio persa", "answer_start": 455}, 
+					{"text": "las ciudades griegas", "answer_start": 455}, 
+					{"text": "el imperio persa", "answer_start": 455}, 
+					{"text": "griegos y persas", "answer_start": 400}], 
+				"id": "12"
+				},
+				{"history" : "Hay dos ciudades que son las más importantes, ¿te suenan sus nombres? ¡A lo mejor yo vivo en una de ellas!",
+				"question": "¿Qué dos ciudades fueron las más importantes?", 
+				"answers": 
+					[{"text": "Atenas y Esparta", "answer_start": 340}], 
+				"id": "13"
+				}
+			]
+		}]
+	}
+]}
