@@ -111,11 +111,12 @@ def main():
                     sys.exit()                  #Se cierra el programa
                 if keys[K_e]:
                     fn='./Modelo_Chatbot.py'
-                    exec(open(fn).read(), globals())  #Ejecutamos chatbot
+                    #exec(open(fn).read(), globals())  
+                    execfile(fn)                 #Ejecutamos chatbot
                 if keys[K_c]:
-                    #execfile(r'./main.py')  #Ejecutamos chatbot
                     fn='./main.py'
-                    exec(open(fn).read(), globals())
+                    #exec(open(fn).read(), globals())
+                    execfile(fn)                 #Ejecutamos chatbot
             
         for box in input_boxes:
             box.update()
