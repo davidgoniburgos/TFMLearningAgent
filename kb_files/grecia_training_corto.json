@@ -1,0 +1,38 @@
+{"version": "v1.0", "data": [
+	{"title": "Grecia", 
+	 "paragraphs": 
+		[{"context": "La época clásica tiene lugar durante el siglo 5 antes de cristo ,y la primera mitad del siglo 4 antes de cristo, que fue el apogeo de las ciudades-estado griegas. Este esplendor se inició tras la victoria de los griegos sobre los persas en las guerras médicas, donde las ciudades griegas se unieron contra el imperio persa. Las ciudades de Atenas y Esparta lideraron la victoria sobre los persas.", 
+			"qas":[
+				{"history": "En tus libros pone que vivo en la época clásica , ¿Sabes en que años fue?",
+				"question": "¿Sabes en que años fue la época clásica?", 
+				"answers": 
+					[{"text": "durante el siglo v antes de cristo y la primera mitad del siglo iv antes de cristo", "answer_start": 30},
+					{"text": "durante el siglo v antes de cristo", "answer_start": 30},
+					{"text": "durante el siglo v antes de cristo y la primera mitad del siglo iv", "answer_start": 30}],
+				"id": "10"
+				},
+				{"history": "Hace poco hubo unas grandes batallas por mar y por tierra, creo que lucharon médicos, ¿sabes cómo se llamaron a estas guerras?",
+				"question": "¿Sabes cómo se llamaron a estas guerras?", 
+				"answers": 
+					[{"text": "las guerras médicas", "answer_start": 240}], 
+				"id": "11"
+				},
+				{"history": "¿Y sabes quienes lucharon en ellas?",
+				"question": "¿sabes quienes lucharon en las guerras médicas?", 
+				"answers": 
+					[{"text": "las ciudades griegas se unieron contra el imperio persa", "answer_start": 455}, 
+					{"text": "las ciudades griegas", "answer_start": 455}, 
+					{"text": "el imperio persa", "answer_start": 455}, 
+					{"text": "griegos y persas", "answer_start": 400}], 
+				"id": "12"
+				},
+				{"history" : "Hay dos ciudades que son las más importantes, ¿te suenan sus nombres? ¡A lo mejor yo vivo en una de ellas!",
+				"question": "¿Qué dos ciudades fueron las más importantes?", 
+				"answers": 
+					[{"text": "Atenas y Esparta", "answer_start": 340}], 
+				"id": "13"
+				}
+			]
+		}]
+	}
+]}

@@ -72,7 +72,7 @@ preguntas_sin_responder = True
 opciones_acierto =['¡Enhorabuena!,','¡Genial!,','¡Así me gusta!, ','¡Muy bien!,']
 # Respuestas erroneas
 opciones_fallo = ['Casi, casi...','Huy..','Por poco...','La proxima seguro que aciertas...']
-# Variable de salto del flujo
+#Control de preguntas pendientes de responder por error
 volver_a_realizar_pregunta_reto = True
 
 # Flujo del chatbot
@@ -82,9 +82,10 @@ while usuario != 'salir':
     usuario = ''
     ints = []
     doc_id = -1
-    #Control de preguntas pendientes de responder
+
     
     if (preguntas_sin_responder):
+        
         print('Pregunta reto: ',historys[historys_id.index(sig_pregunta_id)])
         hablar(historys[historys_id.index(sig_pregunta_id)])
         print('captura de audio')
@@ -132,7 +133,6 @@ while usuario != 'salir':
         
         # Si el alumno pregunta por la lección        
         elif ints[0]['intent'] == 'tema':
-
             # Se pregunta si quiere saber la lección
             print("¿Quieres que te diga la lección que vas a repasar?")
             hablar("¿Quieres que te diga la lección que vas a repasar?")
@@ -152,7 +152,7 @@ while usuario != 'salir':
             break
         
         #sig_pregunta_id = siguiente_pregunta(dialogFlow)+1
-            
+
         if(sig_pregunta_id > max(historys_id)):
             preguntas_sin_responder = False
             print('Enhorabuena, has contestado a todas las preguntas.')
@@ -178,6 +178,20 @@ while usuario != 'salir':
                 res = pregunta_respuesta(usuario,contextos_unicos[doc_id])
             else:
                 res = 'No he encontrado nada, lo siento no te puedo ayudar.'
+        # Si el alumno pregunta por la lección        
+        elif ints[0]['intent'] == 'tema':
+            # Se pregunta si quiere saber la lección
+            print("¿Quieres que te diga la lección que vas a repasar?")
+            hablar("¿Quieres que te diga la lección que vas a repasar?")
+            usuario = str(escuchar())
+            res, ints , name  = inicio_chatbot(usuario, oraculo, name, dialogFlow)  
+            if ints[0]['intent'] == 'afirmativo':
+                for tema in contextos_unicos:
+                    for frase in tema.split('.'):
+                        if frase != "":
+                            hablar(frase)
+            else:
+                res ='¡Vale!'
         print(personaje,':' , res)
         hablar(res)
     

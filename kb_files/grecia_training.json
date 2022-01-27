@@ -10,8 +10,8 @@
 					{"text": "ciudades-estado", "answer_start": 511}],
 				"id": "1" 
 				},
-				{"history": "Recuerdo que vivo en una ciudad pero no recuerdo cómo son, ¿me puedes decir cómo son las ciudades griegas?",
-				"question": "¿me puedes decir cómo son las ciudades griegas?", 
+				{"history": "Recuerdo que vivo en una ciudad pero no recuerdo cómo son, ¿me puedes decir cómo son las ciudades estados?",
+				"question": "¿me puedes decir cómo son las ciudades estado?", 
 				"answers": 
 					[{"text": "eran fortalezas amuralladas", "answer_start": 646}, 
 					{"text": "eran fortalezas amuralladas que se construían en lo alto de las colinas", "answer_start": 646}, 
@@ -42,8 +42,8 @@
 		},
 		{"context": "El territorio de la Hélade tenía recursos agrarios limitados, y el crecimiento de la población produjo escasez de alimentos, provocando conflictos sociales. Estos conflictos sociales por la falta de alimentos produjeron un éxodo que provocó la fundación de ciudades llamada, colonización para favorecer el comercio entre las ciudades-estado. Esta colonización se realizó en torno al mar Mediterráneo. Cada colonia se funda como polis independientes de la ciudad origen o metrópoli, con la que mantenía contactos comerciales y culturales. Los griegos llegaron hasta el extremo occidental del Mediterráneo atraídos por sus riquezas mineras y productos agrícolas, a la que llamaron Iberia. Las colonias más conocidas en la península ibérica fueron Hemeroskopeion, Mainake cerca de la actual Málaga, Rhode (Rosas) y Emporio (Ampurias) en el norte. Al proceso de expansión de la cultura griega se denomina helenización. El comercio por barco entre las ciudades-estado griegas las convirtieron en la mayor potencia marítima del Mediterráneo.", 
 			"qas":[
-				{"history": "Mis padres me dijeron una vez que yo no nací en esta ciudad sino que tuvimos que emigrar a otras ciudades por la falta de recursos agrarios. ¿Sabes cómo se llaman a la fundación de estas ciudades?",
-				"question": "¿sabes cómo se llaman a la fundación de estas ciudades ?", 
+				{"history": "Mis padres me dijeron una vez que yo no nací en esta ciudad sino que tuvimos que emigrar a otras ciudades por la falta de recursos agrarios. ¿Sabes cómo se llama a la fundación de estas ciudades?",
+				"question": "¿sabes cómo se llama a la fundación de estas ciudades ?", 
 				"answers": 
 					[{"text": "la colonización", "answer_start": 272},
 					{"text": "la colonización: la fundación de ciudades para favorecer el comercio entre las ciudades-estado", "answer_start": 272}],
