@@ -1,0 +1,2 @@
+download_from_huggingface
+mrm8488\bert-spanish-cased-finetuned-ner
