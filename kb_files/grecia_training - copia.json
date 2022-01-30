@@ -1,7 +1,7 @@
 {"version": "v1.0", "data": [
 	{"title": "Grecia", 
 	 "paragraphs": 
-		[{"context": "La civilización griega se originó en el Mediterráneo oriental, entre los mares Jónico y Egeo. A este espacio los griegos lo denominaron la Hélade. El relieve de la Hélade era abrupto de valles separados por altas montañas, que dificultaban las comunicaciones terrestres y la creación de grandes reinos, favoreciendo las comunicaciones marítimas y las creaciones de ciudades estado independientes. La principal característica de la civilización cretense fué su control del mar, lo que se llama talasocracia. Las ciudades estado, también se las llamaba polis, eran independientes y poseían su gobierno, su moneda y su ejército. Las ciudades estados eran fortalezas amuralladas que se construían en lo alto de las colinas a esta zona elevada y fortificada se llama acrópolis, y dentro de las murallas se agrupaban las casas alrededor de la acrópolis, lugar donde se concentraban los edificios más importantes, como los templos. En el interior de las murallas se encuentra la Ágora, una plaza central donde se celebran actividades políticas y ciudadanas. Cada ciudad-estado estaba rodeada de territorio agrícola dependiente de la que obtenían sus recursos.", 
+		[{"context": "La civilización griega se originó en el Mediterráneo oriental, entre los mares Jónico y Egeo. A este espacio los griegos lo denominaron la Hélade. El relieve de la Hélade era abrupto de valles separados por altas montañas, que dificultaban las comunicaciones terrestres y la creación de grandes reinos, favoreciendo las comunicaciones marítimas y las creaciones de ciudades-estado independientes. La principal característica de la civilización cretense fué su control del mar, lo que se llama talasocracia. Las ciudades-estado, también llamadas polis, eran independientes y poseían su gobierno, su moneda y su ejército. Las ciudades-estados eran fortalezas amuralladas que se construían en lo alto de las colinas a esta zona elevada y fortificada se llama acrópolis, y dentro de las murallas se agrupaban las casas alrededor de la acrópolis, lugar donde se concentraban los edificios más importantes, como los templos. En el interior de las murallas se encuentra la Ágora, una plaza central donde se celebran actividades políticas y ciudadanas. Cada ciudad-estado estaba rodeada de territorio agrícola dependiente de la que obtenían sus recursos.", 
 			"qas":[
 				{"history": "No quiero meterme en lios y quiero llegar a casa, ¿sabes cómo se le llama a las ciudades griegas?",
 				"question": "¿Sabes cómo se llaman a las ciudades griegas?", 
@@ -10,8 +10,8 @@
 					{"text": "ciudades-estado", "answer_start": 511}],
 				"id": "1" 
 				},
-				{"history": "Recuerdo que vivo en una ciudad pero no recuerdo cómo son, ¿me puedes decir cómo son las ciudades griegas?",
-				"question": "¿me puedes decir cómo son las ciudades estados?", 
+				{"history": "Recuerdo que vivo en una ciudad pero no recuerdo cómo son, ¿me puedes decir cómo son las ciudades estados?",
+				"question": "¿me puedes decir cómo son las ciudades estado?", 
 				"answers": 
 					[{"text": "eran fortalezas amuralladas", "answer_start": 646}, 
 					{"text": "eran fortalezas amuralladas que se construían en lo alto de las colinas", "answer_start": 646}, 

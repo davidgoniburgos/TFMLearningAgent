@@ -65,7 +65,7 @@ for intent in intents['intents']:
             classes.append(intent['tag'])
 
 words = [lemmatizer.lemmatize(w.lower()) for w in words if w not in ignore_words]
-
+print(words)
 pickle.dump(words, open('./chatbot/words.pkl','wb'))
 pickle.dump(classes, open('./chatbot/classes.pkl','wb'))
 
@@ -85,7 +85,7 @@ for doc in documents:
 
     output_row = list(output_empty)
     output_row[classes.index(doc[1])] = 1
-
+    
     training.append([bag, output_row])
 
 training = np.array(training)
@@ -111,7 +111,6 @@ print("model created")
 from matplotlib import pyplot as plt
 
 plt.plot(hist.history['accuracy'])
-#plt.plot(hist.history['val_acc'])
 plt.title('model accuracy')
 plt.ylabel('accuracy')
 plt.xlabel('epoch')
@@ -119,7 +118,6 @@ plt.legend(['train', 'val'], loc='upper left')
 plt.show()
 
 plt.plot(hist.history['loss'])
-#plt.plot(hist.history['val_loss'])
 plt.title('model loss')
 plt.ylabel('loss')
 plt.xlabel('epoch')

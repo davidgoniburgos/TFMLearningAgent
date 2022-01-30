@@ -22,6 +22,7 @@ from Dialog_flow_Module import siguiente_pregunta, calcular_acierto_pregunta, ca
 import logging
 logging.basicConfig(level=logging.ERROR)
 import random
+import re
 
 ## INTRO APP
 print ('Inicio de la APP')
@@ -32,7 +33,7 @@ print ('###  EL CHATBOT REALIZARA PREGUNTAS DE REPASO DEL TEMA DE CLASE  ####')
 print ('#####################################################################')
 print ('###         PUEDES PREGUNTALE COSAS AL CHATBOT DEL TEMA          ####')
 print ('#####################################################################')
-print ('###  DI ORACULO Y A CONTNUACION LA PREGUNTA QUE QUIERAS CONOCER  ####')
+print ('###  DI ORACULO Y A CONTINUACION LA PREGUNTA QUE QUIERAS CONOCER  ###')
 print ('#####################################################################')
 
 ## GESTION DEL DIALOGO
@@ -49,7 +50,10 @@ kb_file = './kb_files/grecia_training.json'
 contextos, historys, historys_id, questions, answers =  extraer_contexto(extraer_kb(kb_file))
 contextos_unicos = list(set(contextos))
 
-
+def eliminar_digitos(respuesta_texto):
+    texto_sin_digitos = re.sub(r'[0-9]+', '', respuesta_texto)
+    print(texto_sin_digitos)
+    return texto_sin_digitos
 # Introducción del reto
 introduccion = ['Hola aventurero de la historia, me llamo '+personaje+', tengo 12 años y vivo cerca de una bonita playa bañada por el mar mediterráneo en el mar Egeo',
                 'Me he golpeado la cabeza cuando me zambullí en el agua, y ahora me duele mucho y no me acuerdo de casi nada.']
@@ -90,10 +94,24 @@ while usuario != 'salir':
         hablar(historys[historys_id.index(sig_pregunta_id)])
         print('captura de audio')
         usuario = str(escuchar())
-
+        
+        # Identifia si hay dígitos en la respuesta para identificar mejor el intent
+        usuario_sin_digitos = eliminar_digitos(usuario)
+                
         # Flujo del Diálogo
-        res, ints , name  = inicio_chatbot(usuario, oraculo, name, dialogFlow)  
-        if ints[0]['intent'] == 'ayuda':
+        #res, ints , name  = inicio_chatbot(usuario, oraculo, name, dialogFlow)  
+        res, ints , name  = inicio_chatbot(usuario_sin_digitos, oraculo, name, dialogFlow) 
+        # Respuesta negativa del alumno a la pregunta
+        if ints[0]['intent'] == 'negativo':
+            #Se continua con el flujo respondiendo la respuesta.
+            res = pregunta_respuesta(questions[historys_id.index(sig_pregunta_id)],contextos[historys_id.index(sig_pregunta_id)])
+            #res , score = calcular_acierto_pregunta(answers,historys_id, sig_pregunta_id,usuario, pregunta_respuesta(questions[historys_id.index(sig_pregunta_id)],contextos[historys_id.index(sig_pregunta_id)]))
+            dialogFlow.append({'intent':ints[0]['intent'],'entrada':usuario,'respuesta':res,'pregunta':{'id':sig_pregunta_id,'preg':'','res_preg':1}})
+            res = "la respuesta es "+res
+            #Se continua con el flujo de las preguntas
+            sig_pregunta_id = siguiente_pregunta(dialogFlow)+1
+            
+        elif ints[0]['intent'] == 'ayuda':
 
             # Se elimina la palabra oraculo de la pregunta del usuario
             usuario = usuario.replace(oraculo, '')
@@ -137,7 +155,8 @@ while usuario != 'salir':
             print("¿Quieres que te diga la lección que vas a repasar?")
             hablar("¿Quieres que te diga la lección que vas a repasar?")
             usuario = str(escuchar())
-            res, ints , name  = inicio_chatbot(usuario, oraculo, name, dialogFlow)  
+            #res, ints , name  = inicio_chatbot(usuario, oraculo, name, dialogFlow)  
+            res, ints , name  = inicio_chatbot(usuario_sin_digitos, oraculo, name, dialogFlow)  
             if ints[0]['intent'] == 'afirmativo':
                 for tema in contextos_unicos:
                     for frase in tema.split('.'):
@@ -167,7 +186,10 @@ while usuario != 'salir':
         #Se inicia conversación de chatbot o consultas
         print('captura de audio')
         usuario = str(escuchar())
-        res, ints, name  = inicio_chatbot(usuario, oraculo, name, dialogFlow)
+        # Identifia si hay dígitos en la respuesta para identificar mejor el intent
+        usuario_sin_digitos = eliminar_digitos(usuario)
+        #res, ints, name  = inicio_chatbot(usuario, oraculo, name, dialogFlow)
+        res, ints, name  = inicio_chatbot(usuario_sin_digitos, oraculo, name, dialogFlow)
         if ints[0]['intent'] == 'ayuda':
             # Se elimina la palabra oraculo de la pregunta del usuario
             usuario = usuario.replace(oraculo, '')
@@ -184,7 +206,10 @@ while usuario != 'salir':
             print("¿Quieres que te diga la lección que vas a repasar?")
             hablar("¿Quieres que te diga la lección que vas a repasar?")
             usuario = str(escuchar())
-            res, ints , name  = inicio_chatbot(usuario, oraculo, name, dialogFlow)  
+            # Identifia si hay dígitos en la respuesta para identificar mejor el intent
+            usuario_sin_digitos = eliminar_digitos(usuario)
+            #res, ints , name  = inicio_chatbot(usuario, oraculo, name, dialogFlow)  
+            res, ints , name  = inicio_chatbot(usuario_sin_digitos, oraculo, name, dialogFlow)  
             if ints[0]['intent'] == 'afirmativo':
                 for tema in contextos_unicos:
                     for frase in tema.split('.'):

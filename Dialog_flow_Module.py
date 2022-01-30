@@ -114,15 +114,18 @@ def calcular_tfidf_doc(pregunta_, contextos_, oraculo_):
     texto_busqueda_tokens_words_filtered_sentence = [w for w in texto_busqueda_tokens_words if not w.lower() in stop_words]
       
     calculo_doc = []
-    score_per_doc = 1.0
+    #score_per_doc = 1.0
     for i,doc in enumerate(documentos_limpio):
+      score_per_doc = 1.0
       #Si no hay aciertos devolverá -1
       calculo_doc.append(-1)
       for word in texto_busqueda_tokens_words_filtered_sentence:
         for word_in_doc in doc:
           if word == word_in_doc[0]:
+            #print(i,",",word,':',word_in_doc[1])
             score_per_doc *= word_in_doc[1]
       calculo_doc[i] = score_per_doc
+      #print(i,',',calculo_doc[i])
     
     print("doc a buscar:" ,calculo_doc.index(max(calculo_doc)))
     return calculo_doc.index(max(calculo_doc))

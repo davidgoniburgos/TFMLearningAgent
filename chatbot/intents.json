@@ -188,7 +188,9 @@
             "patterns": ["No",
             "nunca",
             "jamás",
-            "lo dudo"
+            "lo dudo",
+			"no lo se",
+			"no me acuerdo"
             ],
             "responses": [
             "¡Vaya!",
