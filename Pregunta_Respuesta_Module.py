@@ -30,7 +30,7 @@ def Model_analizer (question_, paragrahp_):
 
 def pregunta_respuesta(pregunta, contexto):
     model_response='No he encontrado nada'
-    #print(f"Pregunta al modelo: {pregunta}")
+
     if contexto == '':
         model_response='No he encontrado nada'
     else:

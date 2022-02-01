@@ -4,6 +4,7 @@ Created on Mon Nov  1 12:11:03 2021
 
 @author: David Goñi Burgos
 @Module: Input voice from mic to text
+@https://www.clubdetecnologia.net/blog/2020/conversor-simple-de-voz-a-texto-usando-speechrecognition-de-python/
 """
 import speech_recognition as sr
 
